@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.0.final using JasperReports Library version 6.20.0-2bc7ab61c56f459e8176eb05c7705e145cd400ad  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="features-by-company" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eb8756af-36db-498c-9df6-14d83f782444">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="FeatureDataAdapter"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.columns" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.remove.empty.space.between.rows" value="true"/>
+	<property name="net.sf.jasperreports.export.xls.white.page.background" value="false"/>
+	<property name="removeEmptySpaceBetweenColumns" value="true"/>
+	<parameter name="userId" class="java.lang.String">
+		<defaultValueExpression><![CDATA["trich509"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="Feature Code" class="java.lang.String">
+		<fieldDescription><![CDATA[featureCode]]></fieldDescription>
+	</field>
+	<field name="Feature Name" class="java.lang.String">
+		<fieldDescription><![CDATA[featureName]]></fieldDescription>
+	</field>
+	<field name="Feature Description" class="java.lang.String">
+		<fieldDescription><![CDATA[featureDescription]]></fieldDescription>
+	</field>
+	<field name="Active" class="java.lang.String">
+		<fieldDescription><![CDATA[active]]></fieldDescription>
+	</field>
+	<field name="Business Name" class="java.lang.String">
+		<fieldDescription><![CDATA[businessStoreName]]></fieldDescription>
+	</field>
+	<field name="Business Id" class="java.lang.Long">
+		<fieldDescription><![CDATA[businessId]]></fieldDescription>
+	</field>
+	<field name="Requesting Flag" class="java.lang.String">
+		<fieldDescription><![CDATA[requestingFlag]]></fieldDescription>
+	</field>
+	<field name="Servicing Flag" class="java.lang.String">
+		<fieldDescription><![CDATA[servicingFlag]]></fieldDescription>
+	</field>
+	<title>
+		<band height="96" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="ElementGroupHeight" x="0" y="0" width="100" height="16" uuid="5e84ac5d-4814-45c1-8742-40a665866b51">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Controlled My Stinking Cassification]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="16" uuid="b3e6bd97-6d91-4a28-89ff-55b7d96382dd">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Features by Company Report]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="0" y="40" width="100" height="16" uuid="064cf11a-744d-4e2f-8d6f-48049e6e892d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["Report Date: " + new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="56" width="100" height="16" uuid="16a3a95f-e67b-458a-afa1-cca28d9e58b2">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA["UserId:" + $P{userId}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="16" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="16" uuid="14d386e8-c8d6-426e-a76b-55467c6368b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3301373-e869-46aa-9a57-f29b5faf03f5"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Feature Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="16" uuid="b8c1e044-d6df-44ed-981b-87b93f34ad93">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96ae142e-8736-49ca-896a-ab4c8fca42ca"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Feature Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="16" uuid="eb28a148-39eb-4691-9b9c-1434f2deed9e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9879941a-6ad4-42ad-9361-8e6cf1dbfd89"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Feature Description]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="16" uuid="25a4674d-cb1f-4ff3-bc22-24ade069c873">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="17c09949-6e9d-4360-b807-bcd5fc219959"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Active]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="16" uuid="569ab649-3ea2-4824-b16d-58039f9269e0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03ae964a-0fa9-4864-9c74-1e3e8a0674ba"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Business Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="16" uuid="ef5b3f38-03b0-433e-9dc1-7db7dc7e6640">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36731445-06e2-40de-b353-5c21b720db31"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Business Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="16" uuid="8b56f7ab-2d1e-490d-86ed-69df861cb4bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84bba33a-33c2-4dd8-b56d-1890d454d2a1"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Requesting Flag]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="100" height="16" uuid="757c2c65-b884-406f-a7ef-65f240d300f5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="696d918b-28f5-432b-bf39-334ecdb0d7a5"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<text><![CDATA[Servicing Flag]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="16" splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="16" uuid="c018dc40-d1b2-4aa2-bb9b-89678209bd04">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3301373-e869-46aa-9a57-f29b5faf03f5"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Feature Code}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="16" uuid="b7bb6705-76b8-4670-b6d0-51e01be2b9bb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96ae142e-8736-49ca-896a-ab4c8fca42ca"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Feature Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="16" uuid="52ef1019-9568-4d99-ba2a-fa5bef65dde9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9879941a-6ad4-42ad-9361-8e6cf1dbfd89"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Feature Description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="16" uuid="99cc2505-9ee0-4050-a7a6-a6566ebc8cc9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="17c09949-6e9d-4360-b807-bcd5fc219959"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Active}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="16" uuid="c67c7ffb-03c8-4bce-8cdc-d0d6ef9f74da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="03ae964a-0fa9-4864-9c74-1e3e8a0674ba"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Business Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="16" uuid="3cdd546a-562b-4ce3-b2a3-d760c55eb33e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="36731445-06e2-40de-b353-5c21b720db31"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Business Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="16" uuid="4875886a-b09d-41d8-9350-672dade68477">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="84bba33a-33c2-4dd8-b56d-1890d454d2a1"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Requesting Flag}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="700" y="0" width="100" height="16" uuid="91d151bb-5939-4475-bb7b-599cea865d68">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="696d918b-28f5-432b-bf39-334ecdb0d7a5"/>
+					<property name="net.sf.jasperreports.print.keep.full.text" value="true"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{Servicing Flag}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

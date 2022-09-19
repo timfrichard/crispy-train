@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beanDataAdapter class="net.sf.jasperreports.data.bean.BeanDataAdapterImpl">
+  <name>FeatureDataAdapter</name>
+  <classpath>C:\programs\github-projects\jasper-studio-plugin\target\feature-data-adapter.jar</classpath>
+  <factoryClass>com.giftedconcepts.jasperstudio.plugin.FeatureStudioFactory</factoryClass>
+  <methodName>generateFeatureCollection</methodName>
+  <useFieldDescription>true</useFieldDescription>
+</beanDataAdapter>
